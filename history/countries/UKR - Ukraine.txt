@@ -1,0 +1,266 @@
+﻿capital = 202 #Kiev
+
+1919.1.1 = {
+	if = {
+		limit = { 
+			has_start_date < 1933.1.1 
+		}
+		set_oob = "UKR_1919"
+	}
+}
+2022.2.24 = {
+	add_ideas = martial_law
+}
+2024.1.1 = {
+	set_oob = "UKR_2024"
+}
+2024.2.8 = {
+	add_ideas = UKR_oleksandr_syrskyi
+}
+2024.5.11 = {
+	activate_mission = extend_martial_law
+}
+
+recruit_character = UKR_kost_levytsky
+recruit_character = UKR_nikita_krushchyov
+recruit_character = UKR_stepan_bandera
+recruit_character = UKR_mykhailo_omelianovych_pavlenko
+recruit_character = UKR_pavlo_shandruk
+recruit_character = UKR_volodymyr_zelenskyy
+recruit_character = UKR_oleksii_arestovych
+recruit_character = UKR_valerii_zaluzhnyi
+recruit_character = UKR_petro_symonenko
+recruit_character = UKR_borys_skoropadskyi
+recruit_character = UKR_revolutionary_action
+recruit_character = UKR_andriy_biletsky
+recruit_character = UKR_oleksandr_syrskyi
+recruit_character = UKR_viktor_medvedchuk
+recruit_character = UKR_viktor_yanukovych
+recruit_character = UKR_oleksandr_turchynov
+recruit_character = UKR_viktor_yushchenko
+recruit_character = UKR_leonid_kuchma
+recruit_character = UKR_denys_shmyhal
+
+1918.4.29 = {
+	set_party_name = {
+		ideology = neutrality
+		long_name = "Skoropadskyi"
+		name = "Skoropadskyi"
+	}
+}
+1941.11.12 = {
+	retire_character = UKR_kost_levytsky
+}
+1952.5.29 = {
+	retire_character = UKR_mykhailo_omelianovych_pavlenko
+}
+1957.2.23 = {
+	promote_character = UKR_borys_skoropadskyi
+}
+1959.10.15 = {
+	retire_character = UKR_stepan_bandera
+}
+1971.9.11 = {
+	retire_character = UKR_nikita_krushchyov
+}
+1979.2.15 = {
+	retire_character = UKR_pavlo_shandruk
+}
+1993.6.19 = {
+	promote_character = UKR_petro_symonenko
+	set_party_name = {
+		ideology = communism
+		long_name = "Komunistychna partiya Ukrayiny"
+		name = "KPU"
+	}
+}
+1994.7.19 = {
+	promote_character = UKR_leonid_kuchma
+	set_party_name = {
+		ideology = oligarchism
+		long_name = "Kuchmizm"
+		name = "Kuchmizm"
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "1994.7.10"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+}
+2005.1.23 = {
+	promote_character = UKR_viktor_yushchenko
+	set_party_name = {
+		ideology = democratic
+		long_name = "Our Ukraine Bloc"
+		name = "NU"
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "2004.12.26"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+}
+2010.2.25 = {
+	promote_character = UKR_viktor_yanukovych
+	set_party_name = {
+		ideology = oligarchism
+		long_name = "Partiia rehioniv"
+		name = "PR"
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		last_election = "2010.2.7"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+}
+2014.2.23 = {
+	promote_character = UKR_viktor_yushchenko
+	set_party_name = {
+		ideology = democratic
+		long_name = "Komitet oporu dyktaturi"
+		name = "KOD"
+	}
+	set_politics = {
+		ruling_party = democratic
+		last_election = "2010.2.7"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+}
+2015.1.1 = {
+	promote_character = UKR_revolutionary_action
+	set_party_name = {
+		ideology = anarchy
+		long_name = "Rzvaljucyjnae dzejanne"
+		name = "RA"
+	}
+}
+2016.10.14 = {
+	promote_character = UKR_andriy_biletsky
+	set_party_name = {
+		ideology = fascism
+		long_name = "Natsionalnyi korpus"
+		name = "NK"
+	}
+}
+2019.5.20 = {
+	add_ideas = UKR_volodymyr_zelenskyy_president
+}
+2020.3.4 = {
+	promote_character = UKR_denys_shmyhal
+	set_party_name = {
+		ideology = democratic
+		long_name = "Sluha narodu"
+		name = "SN"
+	}
+}
+2024.2.8 = {
+	promote_character = UKR_valerii_zaluzhnyi
+	set_party_name = {
+		ideology = authoritarianism
+		long_name = "Zbroini syly Ukrainy"
+		name = "ZSU"
+	}
+}
+
+2025.3.10 = {
+	set_popularities = {
+		democratic = 61
+		fascism = 3
+		authoritarianism = 36
+	}
+}
+
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+}
+1936.1.1 = {
+	# Starting tech
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		tech_recon = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_military_police = 1
+		tech_mountaineers = 1
+		tech_trucks = 1
+		motorised_infantry = 1
+		paratroopers = 1
+		gw_artillery = 1
+		mass_assault = 1
+		fleet_in_being = 1
+	}
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		set_technology = {
+			early_submarine = 1
+			basic_submarine = 1
+			early_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			early_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			mtg_transport = 1
+			basic_battery = 1
+			basic_torpedo = 1
+		}
+	}
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 30
+	communism = 50
+}

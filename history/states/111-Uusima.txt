@@ -1,0 +1,52 @@
+
+state={
+	id=111
+	name="STATE_111"
+
+	history={
+		owner = SWE
+		add_core_of = FIN
+		1808.1.1 = {
+			controller = RUS
+		}
+		1809.1.1 = {
+                owner = FIN
+                }
+		victory_points = {
+			11105 20 
+		}
+		1936.1.1 = {
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 5
+			11105 = {
+				naval_base = 5
+				coastal_bunker = 2
+
+			}
+		}
+                }
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			dockyard = 1
+			11105 = {
+				naval_base = 5
+
+			}
+		}
+
+	}
+
+	provinces={
+		204 6009 6108 6144 9129 11105 11211 
+	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

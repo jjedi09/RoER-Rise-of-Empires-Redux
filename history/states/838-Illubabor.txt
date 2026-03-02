@@ -1,0 +1,65 @@
+
+state={
+	id=838
+	name="STATE_838"
+
+	history={
+		owner = EGY
+		add_core_of = EGY
+		1600.1.1 = {
+			owner = OTO
+			controller = OTO
+			add_core_of = OTO
+			remove_core_of = ALY
+			remove_core_of = KRM
+			remove_core_of = RAM
+			remove_core_of = CND
+			remove_core_of = DUL
+			remove_core_of = QAR
+			remove_core_of = AGQ
+			remove_core_of = EGY
+
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			1201 1
+		}
+	    victory_points = {
+			7107 2
+		}
+		victory_points = {
+			13251 1
+		}
+		add_core_of = PAL
+		1919.1.1 = {
+			owner = ENG
+			controller = ENG
+			remove_core_of = OTO
+
+		}
+						1936.1.1 = {
+			owner = ISR
+            }
+		1946.1.1 = {
+			owner = ISR
+			controller = ISR
+            remove_core_of = SPR
+		}
+		1947.1.1 = {
+			owner = PAL
+			controller = PAL
+            add_core_of = PAL
+            remove_core_of = OTO
+		}
+	}
+
+	provinces={
+		1201 7107 13251 
+	}
+	manpower=450000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

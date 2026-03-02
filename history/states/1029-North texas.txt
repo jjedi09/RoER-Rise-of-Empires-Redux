@@ -1,0 +1,41 @@
+
+state={
+	id=1029
+	name="STATE_1029"
+
+	history={
+		owner = SCH
+		add_core_of = SCH
+		1950.1.1 = {
+			owner = WGR
+			add_core_of = WGR
+			remove_core_of = GER
+		}
+		2000.1.1 = {
+			owner = GER
+			add_core_of = GER
+			remove_core_of = DDR
+			remove_core_of = WGR
+		}
+		1871.1.1 = {
+			add_core_of = GER
+			owner = GER
+		}
+		1919.1.1 = {
+			remove_core_of = SCH
+		}
+		victory_points = {
+			3395 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		3395 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

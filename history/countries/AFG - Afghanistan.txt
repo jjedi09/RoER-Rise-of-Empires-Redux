@@ -1,0 +1,208 @@
+﻿capital = 267
+1741.1.1 = {
+set_cosmetic_tag = AFG_durrani # 
+}
+1848.1.1 = {
+set_cosmetic_tag = AFG # Netherlands East Indies
+}
+1936.1.1 = {
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "AFG_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "AFG_1936_nsb"
+}
+}
+set_technology = {
+	infantry_weapons = 1
+}
+1936.1.1 = {
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = { #vanilla keeps the old system, nsb afghanistan will no longer produce some of the most advanced tanks in the world
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { 
+		gwtank_chassis = 1
+		
+	}
+}
+recruit_character = AFG_mohammed_zahir_shah
+recruit_character = AFG_akram_sattari
+recruit_character = AFG_yaqub_khan
+recruit_character = AFG_mihrdil_shahnawaz
+recruit_character = AFG_sardar_shah_wali_khan
+recruit_character = AFG_hares_muzafar
+recruit_character = AFG_asadullah_seraj_khan
+recruit_character = AFG_gholam_wali
+recruit_character = AFG_nasirullah_husain
+recruit_character = AFG_muhammad_amin_bughra
+recruit_character = AFG_azam_ataullah
+recruit_character = AFG_mohammed_daoud_khan
+recruit_character = AFG_renato_bardolucci
+recruit_character = AFG_ali_muhammed_khan
+recruit_character = AFG_mohammed_etemadi_khan
+recruit_character = AFG_aalem_daana
+recruit_character = AFG_wazir_akbar_khan
+recruit_character = AFG_mahmud_khan
+recruit_character = AFG_haji_faiz_muhammed_zikeria
+recruit_character = AFG_mohammad_hashim_khan
+recruit_character = AFG_muhammed_nowroz
+
+}
+
+1929.11.1 = {
+	set_popularities = {
+		authoritarianism = 100
+	}
+	set_politics = {
+		ruling_party = authoritarianism
+		elections_allowed = no
+	}
+	promote_character = AFG_mohammad_hashim_khan
+}
+1953.9.7 = {
+	set_popularities = {
+		democratic = 100
+	}
+	set_politics = {
+		ruling_party = democratic
+		elections_allowed = no
+	}
+	promote_character = AFG_mohammed_daoud_khan
+}
+
+1936.2.5 = {
+	complete_national_focus = AFG_support_king_zahir
+}
+1936.3.12 = {
+	complete_national_focus = AFG_biding_our_time
+}
+1936.4.16 = {
+	complete_national_focus = AFG_visit_foreign_capitals
+}
+1946.1.1 = {
+	complete_national_focus = AFG_promote_the_counter_elite
+}
+1964.10.1 = {
+	complete_national_focus = AFG_parliamentary_democracy
+}
+1965.8.26 = {
+	complete_national_focus = AFG_hold_elections
+}
+1965.9.30 = {
+	complete_national_focus = AFG_reform_1
+}
+1965.11.4 = {
+	complete_national_focus = AFG_reform_3
+}
+1965.12.9 = {
+	complete_national_focus = AFG_concessions_to_pashtuns
+}
+1966.2.17 = {
+	complete_national_focus = AFG_reform_4
+}
+1966.3.24 = {
+	complete_national_focus = AFG_rapprochement_with_non_pashtuns
+}
+1966.4.28 = {
+	complete_national_focus = AFG_defending_democracy
+}
+1966.6.2 = {
+	complete_national_focus = AFG_gain_religious_support_for_reforms
+}
+1966.8.11 = {
+	complete_national_focus = AFG_recruit_foreign_experts
+}
+1966.10.20 = {
+	complete_national_focus = AFG_seek_american_aid
+}
+1973.7.17 = {
+	complete_national_focus = AFG_republic_of_afghanistan
+}
+1978.4.27 = {
+	complete_national_focus = AFG_1960_focus_1
+}
+1979.12.25 = {
+	complete_national_focus = AFG_1960_focus_2
+}
+1992.4.24 = {
+	complete_national_focus = AFG_1960_focus_3
+}
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "AFG_1939"
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "AFG_1939_air_bba"
+		else = {
+			set_air_oob = "AFG_1939_air_legacy"
+			set_technology = {
+				early_fighter = 1
+				CAS1 = 1
+			}
+		}
+	}
+	set_technology = {
+		
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
