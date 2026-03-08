@@ -1,0 +1,33 @@
+state={
+	id=1047
+	name="STATE_1047"
+	resources={
+		coal = 12 #initial distribution
+	}
+
+	history={
+		owner = PRE
+		add_core_of = PRE
+        1721.9.10.12 = {
+            owner = PRE
+		add_core_of = PRE
+        }
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			7314 1 
+		}
+	}
+
+	provinces={
+		3380 6402 11245
+	}
+	manpower = 1057400
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies=0.0 
+}

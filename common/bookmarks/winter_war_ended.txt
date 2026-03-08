@@ -1,0 +1,24 @@
+bookmarks = {
+	bookmark = {
+		name = "end of Charles XII regin, aka caroulus rex"
+		desc = "The end of the great northern war"
+		date = 1721.9.10.12
+		picture = "GFX_select_date_1936"
+		default_country = PRE
+		default = yes
+		
+		"PRE" = {
+        history = "ENG_GATHERING_STORM_DESC"
+			ideology = neutrality
+
+
+
+		}
+		
+
+
+
+
+
+	}
+}
