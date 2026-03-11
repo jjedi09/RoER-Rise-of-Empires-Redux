@@ -1,0 +1,19 @@
+state={
+	id=1050
+	name="STATE_1050"
+
+	history = {
+		owner = LBV
+		add_core_of = ITA
+		add_core_of = LBV
+	}
+
+
+	provinces={
+		607 773 969 3780 9584 
+	}
+	manpower=0
+	state_category = town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

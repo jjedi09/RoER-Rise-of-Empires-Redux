@@ -1,0 +1,17 @@
+state={
+	id=1049
+	name="STATE_1049"
+
+	history = {
+		owner = GEN
+		add_core_of = ITA
+		add_core_of = GEN
+	}
+
+	provinces={
+		3772 6788 11891 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
