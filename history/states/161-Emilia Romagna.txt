@@ -13,7 +13,7 @@ state={
 		aluminium=9
 	}
 	provinces={
-		3773 3976 6790 6973 9752 
+		3976 6973 9752 
 	}
 	manpower=3202401
 	buildings_max_level_factor=1
